@@ -26,11 +26,15 @@ public class ContatoRepository {
         try {
             List<String> linhas = Files.readAllLines(arquivo);
 
-            int contador = 0;
-            while (contador < linhas.size()){
-                System.out.println(linhas.get(contador));
-                contador++;
+            for(String linha : linhas){
+                System.out.println(linha);
             }
+
+//            int contador = 0;
+//            while (contador < linhas.size()){
+//                System.out.println(linhas.get(contador));
+//                contador++;
+//            }
 
             System.out.println("PROGRAMA FINALIZADO!");
         } catch (IOException e) {
