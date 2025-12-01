@@ -27,6 +27,8 @@ public class ContatoRepository {
             List<String> linhas = Files.readAllLines(arquivo);
 
             for(String linha : linhas){
+                String[] linhaContato = linha.split(";");
+                System.out.println(linhaContato[0] + " - " + linhaContato[1]);
                 System.out.println(linha);
             }
 
