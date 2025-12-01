@@ -28,8 +28,10 @@ public class ContatoRepository {
 
             for(String linha : linhas){
                 String[] linhaContato = linha.split(";");
-                System.out.println(linhaContato[0] + " - " + linhaContato[1]);
-                System.out.println(linha);
+                System.out.println("NOME: " + linhaContato[1]);
+                System.out.println("EMAIL: " + linhaContato[2]);
+                System.out.println("FONE: " + linhaContato[3]);
+                System.out.println("-----------------------------");
             }
 
 //            int contador = 0;
